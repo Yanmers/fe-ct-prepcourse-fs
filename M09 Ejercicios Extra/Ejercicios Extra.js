@@ -8,9 +8,7 @@ function deObjetoAarray(objeto) {
    // Tu código:
    var aregloDeObjetos = [];
    for (let i = 0; i < objeto.length; i++) {
-      if (objeto[i]=== aregloDeObjetos) {
-       
-      }
+      
    }
 
 }
