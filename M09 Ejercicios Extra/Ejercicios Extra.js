@@ -6,6 +6,13 @@ function deObjetoAarray(objeto) {
    // Estos elementos debe ser cada par clave:valor del objeto recibido.
    // [EJEMPLO]: {D: 1, B: 2, C: 3} ---> [['D', 1], ['B', 2], ['C', 3]].
    // Tu código:
+   var aregloDeObjetos = [];
+   for (let i = 0; i < objeto.length; i++) {
+      if (objeto[i]=== aregloDeObjetos) {
+       
+      }
+   }
+
 }
 
 function numberOfCharacters(string) {
@@ -35,6 +42,7 @@ function capicua(numero) {
    // Si el número que recibes es capicúa debes retornar el string: "Es capicua".
    // Caso contrario: "No es capicua".
    // Tu código:
+  
 }
 
 function deleteAbc(string) {
