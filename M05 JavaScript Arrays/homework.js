@@ -175,9 +175,9 @@ function todosIguales(array) {
    // Caso contrario retornar false.
    // Tu código:
    for (let i = 0; i < array.length; i++) {
-      if(array[i] === array[0]){
+      if(array[i] == array[i+1]){
          return true;
-      }else false;
+      }else return false;
       
    }
    
@@ -188,6 +188,17 @@ function mesesDelAño(array) {
    // "Marzo" y "Noviembre", guardarlos en un nuevo arreglo y retornarlo.
    // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
    // Tu código:
+   let arrayMeses = [];
+   for (let i = 0; i < array.length; i++) {
+      if (array[i] === "Enero" && array[i] === "Marzo" && array[i] === "Noviembre") {
+         arrayMeses.push(array[i])
+      }
+      if(arrayMeses.length === 3){
+         return arrayMeses;
+      }else{
+         return "No se encontraron los meses pedidos";
+      }
+   }
    
 }
 
@@ -195,6 +206,12 @@ function tablaDelSeis() {
    // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
    // Tu código:
+  var resultados = [];
+  for (let i = 0; i < 11; i++) {
+   resultados = (i * 6);
+   
+  }
+  return resultados;
 }
 
 function mayorACien(array) {
