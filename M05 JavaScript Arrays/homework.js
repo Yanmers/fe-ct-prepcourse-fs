@@ -190,14 +190,14 @@ function mesesDelAño(array) {
    // Tu código:
    let arrayMeses = [];
    for (let i = 0; i < array.length; i++) {
-      if (array[i] === "Enero" && array[i] === "Marzo" && array[i] === "Noviembre") {
+      if (array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre") {
          arrayMeses.push(array[i])
       }
-      if(arrayMeses.length === 3){
-         return arrayMeses;
-      }else{
-         return "No se encontraron los meses pedidos";
-      }
+   }
+   if(arrayMeses.length === 3){
+      return arrayMeses;
+   }else{
+      return "No se encontraron los meses pedidos";
    }
    
 }
