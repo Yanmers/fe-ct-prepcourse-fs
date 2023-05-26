@@ -164,9 +164,14 @@ function empiezaConNueve(num) {
    // Esta función recibe por parámetro un número.
    // Debe retornar true si el entero inicia con 9 y false en otro caso.
    // Tu código:
-
-  nun = num.toString();
-  return num[0] === "9" ? true : false;
+   const resp = num.toString(); 
+   for(let i = 0; i < resp.length; i++){
+      if(resp[i][0] === '9'){
+         return true;
+      }else{
+         return false;
+      }
+   }
    
 }
 
@@ -206,12 +211,14 @@ function tablaDelSeis() {
    // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
    // Tu código:
-  var resultados = [];
-  for (let i = 0; i < 11; i++) {
-   resultados = (i * 6);
-   
-  }
-  return resultados;
+
+   let resultado = [];
+   for (let i = 0; i < 11; i++) {
+      resultado.push(6*i);
+     
+   }
+   return resultado;
+  
 }
 
 function mayorACien(array) {
@@ -232,6 +239,22 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
+   var array = [];
+   var suma = num;
+   for (var i = 0; i < 10; i++) {
+     suma = suma + 2;
+     if (suma === i) break;
+     else {
+       array.push(suma);
+     }
+   }
+   if (i < 10) {
+     return "Se interrumpió la ejecución";
+   } else {
+     return array;
+   }
+ 
+   
 }
 
 function continueStatement(num) {
